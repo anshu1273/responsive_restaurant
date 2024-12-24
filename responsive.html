@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | Fresh & Delicious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: url('./folder/food2.jpg') no-repeat center center/cover;
+            height: 900px;
+            color: rgb(87, 39, 228);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 7rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 4rem;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fdb4b4;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(230, 238, 238, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #333;
+            text-decoration:none;
+            margin: 0 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #09c0d8;
+        }
+        .section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .about {
+            text-align: center;
+        }
+        .about img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5rem;
+            justify-content: center;
+        }
+        .menu-item {
+            flex: 1 1 calc(33.333% - 40px);
+            border: 1px solid #e03f3f;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(244, 188, 188, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 15px;
+            text-align: center;
+        }
+        .reviews {
+            background-color: #bedfa6;
+            font-size: 1.5rem;
+            padding: 50px 20px;
+        }
+        .review {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .menu-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .menu-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Costa Vida </h1>
+        <p>Fresh Ingredients, Delicious Meals</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="about" class="section about">
+        <font size="6"><b>About Us</b></font>
+        <p><font size="5">At <h3>Costa Vida,</h3> we believe in serving fresh, flavorful, and high-quality meals. Our dishes are crafted with love and inspired by global cuisines.</p></font>
+        <img src="./folder/image.png" alt="About us">
+    </section>
+    <center>
+        <font size="7">Our Menu</font>
+    </center>
+    <section id="menu" class="section menu">
+        
+        <div class="menu-item">
+            <img src="./folder/chocate chips cookies.png" alt="Dish 1">
+            <h3>Chocate Chips Cookies</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/food1.jpg" alt="Dish 2">
+            <h3>Burger </h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/food3.jpg" alt="Dish 3">
+            <h3>Healthy Juice</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/Fried Rice.png" alt="Dish 3">
+            <h3>Fried Rice</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/photo.avif">
+            <h3>Fruits with pastries</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/premium_photo.avif" alt="Dish 3">
+            <h3>Noddles</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/Lentils.png" alt="Dish 3">
+            <h3>Lentils</h3>
+        </div>
+        <div class="menu-item">
+            <img src="./folder/salad.png" alt="Dish 3">
+            <h3>Salad</h3>
+        </div>
+    </section>
+    <section id="reviews" class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p><strong>Amit Chaudhary:</strong> Amazing food and great service!</p>
+        </div>
+        <div class="review">
+            <p><strong>Ravi Chaurasia:</strong> Loved the ambiance and the dishes were fantastic.</p>
+        </div>
+        <div class="review">
+            <p><strong>Rajan Rathore:</strong>Fresh and Flavorful!</p>
+        </div>
+        <div class="review">
+            <p><strong>Palak Singh:</strong>A Taste of Paradise
+            </p>
+        </div>
+        <div class="review">
+            <p><strong>Mamta Dubey:</strong> Great Value for Quality Food</p>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <font size="5">Contact Us</font>
+        <form >
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Feedback" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+            
+        </form>
+        <h3>Email: &nbsp;&nbsp;<a href="mailto:anshumar699@gmail.com">contact@restaurant.com</a> | Phone: &nbsp;&nbsp;7266957667</h3>
+        <h2>Location:&nbsp;&nbsp; Mukharjee Nagar, Delhi</h2>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Restaurant Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
